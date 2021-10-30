@@ -86,7 +86,7 @@ function setup(){
     ball = new Ball();
     chain = new Chain({x:400,y: 90},ball.body)
 
-  Engine.update(engine);
+ 
 
 }
 
@@ -168,5 +168,6 @@ function draw() {
 
 function mouseDragged(){
   Matter.Body.setPosition(ball.body,{x:mouseX, y:mouseY})
+   Engine.update(engine);
 }
 
